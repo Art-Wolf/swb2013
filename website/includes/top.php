@@ -75,18 +75,18 @@
 						<img class="next" src="img/slides/bt-next.png" alt="Next Frame" />
 						<ul>
 							<li class="animate-in">
-								<h2 class="title">Fresh design</h2>
-								<h5 class="subtitle">We always consider with latest web design trends</h5>
+								<h2 class="title">Your Schedule, Your Life</h2>
+								<h5 class="subtitle">The real world intrudes on you and catches you off guard - lets take bake control</h5>
 								<img class="model" src="img/slides/img1.png" alt="" />
 							</li>
 							<li>
-								<h2 class="title">Responsive layout</h2>
-								<h5 class="subtitle">Degrade from wide screen to mobile screen size</h5>
+								<h2 class="title">Hectic Commutes</h2>
+								<h5 class="subtitle">We take the fear out of getting caught in gridlock</h5>
 								<img class="model" src="img/slides/img2.png" alt="" />
 							</li>
 							<li>
-								<h2 class="title">Built with bootstrap</h2>
-								<h5 class="subtitle">Supports modern browsers, old browsers (IE7+), touch devices and responsive designs</h5>
+								<h2 class="title">Human Touch</h2>
+								<h5 class="subtitle">Worried you will oversleep? Have a housemate be alerted that you slept in</h5>
 								<img class="model" src="img/slides/img3.png" alt="" />
 							</li>
 						</ul>
