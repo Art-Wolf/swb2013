@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+jQuery(document).ready(function($) {
+var split = location.search.replace('?', '').split('&').map(function(val){
+  return val.split('=');
+});
+
+  $.ajax({
+  url : "http://api.wunderground.com/api/03d9e37c0f36d5a3/alerts/q/" + split[0][1] + "/" + split[1][1] + ".json",
+  dataType : "jsonp",
+  success : function(parsed_json) {
+  var temp_f = parsed_json['alerts'][0]['phenomena'];
+
+  if (temp_f  === undefined) {
+	alert(0);
+  }
+  else {
+  alert("Current condition code is: " + temp_f);
+  var message = parsed_json['alerts'][0]['message'];
+  alert("Condition message  " + message);
+  }}
+  });
+});
+</script>
+</body>
+</html>
