@@ -10,7 +10,7 @@ var split = location.search.replace('?', '').split('&').map(function(val){
 });
 
   $.ajax({
-  url : "http://api.wunderground.com/api/03d9e37c0f36d5a3/alerts/q/" + split[0][1] + "/" + split[1][1] + ".json",
+  url : "http://api.wunderground.com/api/APIKEY/alerts/q/" + split[0][1] + "/" + split[1][1] + ".json",
   dataType : "jsonp",
   success : function(parsed_json) {
   var temp_f = parsed_json['alerts'][0]['phenomena'];
