@@ -1,6 +1,6 @@
 <?php
 
-require_once('/home/artwolf/johndoyle.ie/swb/demo/includes/top.php');
+require_once('includes/top.php');
 
 ?>
 	<!-- section main content -->
@@ -158,6 +158,6 @@ require_once('/home/artwolf/johndoyle.ie/swb/demo/includes/top.php');
 	<!-- end main content section -->
 <?php
 
-require_once('/home/artwolf/johndoyle.ie/swb/demo/includes/footer.php');
+require_once('includes/footer.php');
 
 ?>
