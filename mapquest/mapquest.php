@@ -1,5 +1,5 @@
 <?php
-$string = 'http://www.mapquestapi.com/directions/v1/route?key=Fmjtd%7Cluub2l61n9%2Cb0%3Do5-96y2gw&callback=renderAdvancedNarrative&ambiguities=ignore&avoidTimedConditions=false&doReverseGeocode=true&outFormat=json&routeType=fastest&timeType=1&enhancedNarrative=false&shapeFormat=raw&generalize=0&locale=en_US&unit=m&from=' . str_replace(' ', '%20',$_GET["from"]) . '&to=' . str_replace(' ', '%20',$_GET["to"]) . '&drivingStyle=2&highwayEfficiency=21.0';
+$string = 'http://www.mapquestapi.com/directions/v1/route?key=KEY&callback=renderAdvancedNarrative&ambiguities=ignore&avoidTimedConditions=false&doReverseGeocode=true&outFormat=json&routeType=fastest&timeType=1&enhancedNarrative=false&shapeFormat=raw&generalize=0&locale=en_US&unit=m&from=' . str_replace(' ', '%20',$_GET["from"]) . '&to=' . str_replace(' ', '%20',$_GET["to"]) . '&drivingStyle=2&highwayEfficiency=21.0';
 
 $file = file_get_contents($string, true);
 
