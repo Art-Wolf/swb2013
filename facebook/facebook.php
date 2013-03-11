@@ -2,8 +2,8 @@
 require 'facebook-php-sdk/src/facebook.php';
 
 $facebook = new Facebook(array(
-  'appId'  => '131919856988146',
-  'secret' => '7707b9a0130f0833ac04ee499bd666a3',
+  'appId'  => '',
+  'secret' => '',
 ));
 
     $access_token = $facebook->getAccessToken();
@@ -21,6 +21,9 @@ $facebook = new Facebook(array(
         echo "Welcome User: " . $me['name'] . "<br />"; 
         //access permission
         $permissions_needed = array('publish_stream', 'read_stream', 'offline_access', 'manage_pages');
+        
+        // I need to examine this logic, it was causing a looping chain of requests for permission..
+        
        // foreach($permissions_needed as $perm) 
        // {  
        //     if( !isset($permissions_list['data'][0][$perm]) || $permissions_list['data'][0][$perm] != 1 )
